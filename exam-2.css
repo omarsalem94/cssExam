@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+.nav {
+ text-align: center;
+ padding: 20px;
+ text-transform: uppercase;
+}
+
+.nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container {
+  background-image: url(./img/banner-bg.jpg);
+  width: 100%;
+  max-width: 1400px;
+  height: 625px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1px;
+}
+
+
+.container .box {
+  padding: 35px;
+  width: 30%;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 140px;
+  left: 150px;
+}
+
+.container .box p {
+  text-align: justify;
+  margin-bottom: 30px;
+  color: rgb(117, 117, 117);
+}
+
+.container .box a {
+  text-decoration: none;
+  background-color: blue;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-top: 40px;
+}
+
+.container .box .divider {
+  margin: 30px 0;
+  width: 28px;
+  height: 7px;
+  background-color: blue;
+  border-radius: 2px;
+}
+
+.divider {
+  margin: 30px 0 20px 85px;
+  width: 28px;
+  height: 7px;
+  background-color: blue;
+  border-radius: 2px;
+}
+
+.products {
+  text-align: center;
+  padding: 0 0 30px 0px;
+  /* margin: 0 50px; */
+}
+
+.products h2 {
+  text-align: start;
+  margin-left: 84px;
+  margin-bottom: 15px;
+}
+
+.products .item {
+  color: rgb(135, 135, 135);
+  width: calc((100%)/5);
+  display: inline-block;
+  border: 2px solid rgb(207, 207, 207);
+  margin: 10px 15px;
+  padding: 20px;
+}
+
+.products .item h3 {
+  font-style: italic;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 40px 0;
+}
+
+.products .item p {
+  color: blue;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+  .container {
+    background-size: contain;
+    height: 420px;
+  }
+  .container .box {
+    width: 40%;
+    top: 50px;
+    overflow: hidden;
+  }
+  .products .item img {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 1000px) {
+  .container .box {
+    width: 50%;
+    top: 84px;
+  }
+  .products .item img {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 650px) {
+  .nav {
+    padding: 10px;
+  }
+   .nav ul li {
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+  .container .box {
+    width: 80%;
+    top: 80px;
+    left: 0;
+  }
+  .products .item img {
+    width: 100%;
+  }
+  .products .item h3 {
+    font-size: 18px;
+  }
+}
